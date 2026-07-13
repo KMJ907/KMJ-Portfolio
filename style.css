@@ -1,0 +1,1065 @@
+/* =====================================================
+   KMJ Portfolio v1
+   Style.css - Part 1
+   Base / Variables / Header / Navigation / Buttons
+===================================================== */
+
+/* =========================
+   Google Font
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap');
+
+
+/* =========================
+   CSS Variables
+========================= */
+
+:root{
+
+    --bg:#0B1120;
+
+    --bg-secondary:#111827;
+
+    --card:#1F2937;
+
+    --primary:#3B82F6;
+
+    --primary-hover:#2563EB;
+
+    --text:#F9FAFB;
+
+    --sub:#9CA3AF;
+
+    --border:rgba(255,255,255,.08);
+
+    --shadow:0 10px 35px rgba(0,0,0,.35);
+
+    --radius:18px;
+
+    --transition:.35s ease;
+
+}
+
+
+/* =========================
+   Reset
+========================= */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:"Pretendard",sans-serif;
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+}
+
+
+/* =========================
+   Selection
+========================= */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+/* =========================
+   Scrollbar
+========================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0B1120;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#334155;
+
+    border-radius:100px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#475569;
+
+}
+
+
+/* =========================
+   Links
+========================= */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+
+/* =========================
+   Images
+========================= */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+
+/* =========================
+   Section
+========================= */
+
+section{
+
+    width:min(1100px,90%);
+
+    margin:auto;
+
+    padding:110px 0;
+
+}
+
+
+/* =========================
+   Title
+========================= */
+
+section h2{
+
+    font-size:2.3rem;
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+    font-weight:700;
+
+}
+
+
+section>p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:var(--sub);
+
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(11,17,32,.75);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar{
+
+    width:min(1200px,92%);
+
+    height:75px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+/* =========================
+   Logo
+========================= */
+
+.logo{
+
+    font-size:1.7rem;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+    letter-spacing:1px;
+
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
+.nav-links{
+
+    display:flex;
+
+    gap:34px;
+
+    list-style:none;
+
+}
+
+
+.nav-links a{
+
+    color:var(--sub);
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+    position:relative;
+
+}
+
+
+.nav-links a:hover{
+
+    color:white;
+
+}
+
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-7px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.3s;
+
+}
+
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 28px;
+
+    border-radius:100px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    cursor:pointer;
+
+}
+
+
+/* =========================
+   Primary
+========================= */
+
+.btn.primary{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+.btn.primary:hover{
+
+    background:var(--primary-hover);
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(59,130,246,.35);
+
+}
+
+
+/* =========================
+   Secondary
+========================= */
+
+.btn.secondary{
+
+    border:1px solid rgba(255,255,255,.1);
+
+    background:rgba(255,255,255,.04);
+
+}
+
+
+.btn.secondary:hover{
+
+    background:rgba(255,255,255,.08);
+
+    transform:translateY(-3px);
+
+}
+
+
+/* =====================================================
+   Utilities
+===================================================== */
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+    transition:1s;
+
+}
+
+
+/* =====================================================
+   KMJ Portfolio v1
+   Style.css - Part 2
+   Hero Section
+===================================================== */
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+/* =========================
+   Background Glow
+========================= */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+
+    height:600px;
+
+    background:radial-gradient(circle,
+    rgba(59,130,246,.25) 0%,
+    rgba(59,130,246,0) 70%);
+
+    top:-220px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:-2;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    background:radial-gradient(circle,
+    rgba(99,102,241,.18) 0%,
+    transparent 70%);
+
+    bottom:-120px;
+
+    right:-80px;
+
+    z-index:-2;
+
+}
+
+
+/* =========================
+   Profile Image
+========================= */
+
+.profile{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid rgba(255,255,255,.08);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
+
+    margin-bottom:35px;
+
+    transition:.5s;
+
+}
+
+.profile:hover{
+
+    transform:translateY(-8px) scale(1.03);
+
+    box-shadow:0 30px 60px rgba(59,130,246,.28);
+
+}
+
+
+/* =========================
+   Hero Title
+========================= */
+
+.hero h1{
+
+    font-size:clamp(3rem,8vw,5.5rem);
+
+    font-weight:800;
+
+    letter-spacing:-2px;
+
+    margin-bottom:10px;
+
+    line-height:1.1;
+
+}
+
+
+/* =========================
+   Hero Subtitle
+========================= */
+
+.hero h2{
+
+    font-size:1.4rem;
+
+    font-weight:500;
+
+    color:var(--primary);
+
+    margin-bottom:24px;
+
+}
+
+
+/* =========================
+   Hero Description
+========================= */
+
+.hero p{
+
+    max-width:650px;
+
+    color:var(--sub);
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+    margin-bottom:45px;
+
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+
+/* =========================
+   Scroll Down
+========================= */
+
+.scroll-down{
+
+    position:absolute;
+
+    bottom:40px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--sub);
+
+    font-size:.9rem;
+
+    animation:float 2s infinite;
+
+}
+
+.scroll-down span{
+
+    font-size:1.4rem;
+
+}
+
+
+/* =========================
+   Floating Animation
+========================= */
+
+@keyframes float{
+
+    0%{
+
+        transform:translate(-50%,0);
+
+    }
+
+    50%{
+
+        transform:translate(-50%,10px);
+
+    }
+
+    100%{
+
+        transform:translate(-50%,0);
+
+    }
+
+}
+
+
+/* =========================
+   Fade In Animation
+========================= */
+
+.hero .profile{
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+.hero h1{
+
+    opacity:0;
+
+    animation:fadeUp .8s ease .2s forwards;
+
+}
+
+.hero h2{
+
+    opacity:0;
+
+    animation:fadeUp .8s ease .4s forwards;
+
+}
+
+.hero p{
+
+    opacity:0;
+
+    animation:fadeUp .8s ease .6s forwards;
+
+}
+
+.hero-buttons{
+
+    opacity:0;
+
+    animation:fadeUp .8s ease .8s forwards;
+
+}
+
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* =========================
+   Hero Divider
+========================= */
+
+.hero::marker{
+
+    display:none;
+
+}
+
+
+
+/* =====================================================
+   KMJ Portfolio v1
+   Style.css - Part 3
+   About & Tech Stack
+===================================================== */
+
+/* =========================
+   ABOUT
+========================= */
+
+#about{
+
+    position:relative;
+
+}
+
+#about p{
+
+    margin-top:30px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:45px;
+
+    color:var(--sub);
+
+    font-size:1.08rem;
+
+    line-height:2;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+#about p:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(59,130,246,.25);
+
+}
+
+#about strong{
+
+    color:white;
+
+}
+
+
+/* =========================
+   TECH STACK
+========================= */
+
+.stack-grid{
+
+    margin-top:55px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:22px;
+
+}
+
+
+/* =========================
+   STACK CARD
+========================= */
+
+.stack-card{
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:30px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    text-align:center;
+
+    font-size:1.05rem;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+
+    cursor:default;
+
+}
+
+
+/* Shine Effect */
+
+.stack-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120%;
+
+    left:-50%;
+
+    width:70%;
+
+    height:250%;
+
+    background:linear-gradient(
+
+        120deg,
+
+        transparent,
+
+        rgba(255,255,255,.08),
+
+        transparent
+
+    );
+
+    transform:rotate(25deg);
+
+    transition:.7s;
+
+}
+
+.stack-card:hover::before{
+
+    left:130%;
+
+}
+
+
+/* Hover */
+
+.stack-card:hover{
+
+    transform:translateY(-10px);
+
+    background:#162033;
+
+    border-color:rgba(59,130,246,.35);
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.35),
+
+    0 0 30px rgba(59,130,246,.12);
+
+}
+
+
+/* =========================
+   STACK TITLE
+========================= */
+
+.stack-card span{
+
+    font-size:.9rem;
+
+    color:var(--sub);
+
+}
+
+
+/* =========================
+   Optional Icon
+========================= */
+
+.stack-card i{
+
+    font-size:2.4rem;
+
+    color:var(--primary);
+
+}
+
+
+/* =========================
+   Grid Animation
+========================= */
+
+.stack-card{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:stackFade .8s forwards;
+
+}
+
+.stack-card:nth-child(1){
+
+    animation-delay:.1s;
+
+}
+
+.stack-card:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+.stack-card:nth-child(3){
+
+    animation-delay:.3s;
+
+}
+
+.stack-card:nth-child(4){
+
+    animation-delay:.4s;
+
+}
+
+.stack-card:nth-child(5){
+
+    animation-delay:.5s;
+
+}
+
+.stack-card:nth-child(6){
+
+    animation-delay:.6s;
+
+}
+
+.stack-card:nth-child(7){
+
+    animation-delay:.7s;
+
+}
+
+.stack-card:nth-child(8){
+
+    animation-delay:.8s;
+
+}
+
+.stack-card:nth-child(9){
+
+    animation-delay:.9s;
+
+}
+
+@keyframes stackFade{
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* =========================
+   Section Spacing
+========================= */
+
+#stack{
+
+    margin-top:20px;
+
+}
+
+
+/* =========================
+   Divider
+========================= */
+
+#stack::after{
+
+    content:"";
+
+    display:block;
+
+    width:120px;
+
+    height:4px;
+
+    margin:65px auto 0;
+
+    border-radius:100px;
+
+    background:linear-gradient(
+
+        to right,
+
+        transparent,
+
+        var(--primary),
+
+        transparent
+
+    );
+
+}
+
+
