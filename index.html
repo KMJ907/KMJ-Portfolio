@@ -2,235 +2,964 @@
 <html lang="ko">
 
 <head>
+    <!-- ============================= -->
+    <!-- 기본 설정 -->
+    <!-- ============================= -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>KMJ | Student Developer</title>
 
-    <meta name="description"
-        content="KMJ의 개발 포트폴리오입니다. Python, Web, Android 등 다양한 프로젝트를 소개합니다.">
+    <meta name="description" content="학생 개발자 KMJ의 포트폴리오입니다. 프로젝트, 기술 스택, 개발 활동을 소개합니다.">
+    <meta name="keywords" content="KMJ, Portfolio, Student Developer, Python, HTML, CSS, JavaScript, Kotlin">
+    <meta name="author" content="KMJ">
 
+    <meta name="theme-color" content="#0B1120">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="KMJ Portfolio">
+    <meta property="og:description" content="학생 개발자 KMJ의 공식 포트폴리오">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
     <link rel="icon" href="assets/favicon.ico">
+
+    <!-- Pretendard -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Devicon -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- ================= Header ================= -->
+    <!-- =======================================================
+         HEADER
+    ======================================================== -->
 
-    <header>
-        <nav class="navbar">
+    <header id="header">
 
-            <div class="logo">
+        <div class="container navbar">
+
+            <a href="#hero" class="logo">
                 KMJ
-            </div>
+            </a>
 
-            <ul class="nav-links">
+            <nav>
 
-                <li><a href="#about">About</a></li>
+                <ul class="nav-links">
 
-                <li><a href="#stack">Stack</a></li>
+                    <li><a href="#about">About</a></li>
 
-                <li><a href="#projects">Projects</a></li>
+                    <li><a href="#stack">Tech Stack</a></li>
 
-                <li><a href="#activity">Activity</a></li>
+                    <li><a href="#projects">Projects</a></li>
 
-                <li><a href="#contact">Contact</a></li>
+                    <li><a href="#activity">Activity</a></li>
 
-            </ul>
+                    <li><a href="#contact">Contact</a></li>
 
-        </nav>
+                </ul>
+
+            </nav>
+
+        </div>
+
     </header>
 
-    <!-- ================= Hero ================= -->
+    <!-- =======================================================
+         HERO
+    ======================================================== -->
 
-    <section class="hero">
+    <section id="hero" class="hero">
 
-        <img src="assets/profile.png"
-            alt="Profile"
-            class="profile">
+        <div class="hero-container">
 
-        <h1>KMJ</h1>
+            <!-- 프로필 -->
 
-        <h2>Student Developer</h2>
+            <img src="assets/profile.png"
+                alt="KMJ Profile"
+                class="profile">
 
-        <p>
-            Building useful software
-            for everyday life.
-        </p>
+            <!-- 소개 -->
 
-        <div class="hero-buttons">
+            <p class="hero-greeting">
 
-            <a href="#projects" class="btn primary">
-                View Projects
-            </a>
+                Hello, I'm
 
-            <a href="#contact" class="btn secondary">
-                Contact
-            </a>
+            </p>
 
-        </div>
+            <h1>
 
-    </section>
+                KMJ
 
-    <!-- ================= About ================= -->
+            </h1>
 
-    <section id="about">
+            <h2>
 
-        <h2>About</h2>
+                Student Developer
 
-        <p>
+            </h2>
 
-            안녕하세요.
+            <p class="hero-description">
 
-            저는 <strong>KMJ</strong>입니다.
+                실생활에 도움이 되는 서비스를 만드는 것을 좋아하는
+                학생 개발자입니다.
 
-            웹 개발, Python, Android 개발 등을 공부하며
+                <br>
 
-            다양한 프로젝트를 만들고 있습니다.
+                웹 개발, Python, Android, AI 등
+                다양한 분야를 공부하며 프로젝트를 만들고 있습니다.
 
-            새로운 기술을 배우고
+            </p>
 
-            실제 사용할 수 있는 서비스를 만드는 것을 좋아합니다.
+            <!-- 태그 -->
 
-        </p>
+            <div class="hero-tags">
 
-    </section>
+                <span>Python</span>
 
-    <!-- ================= Stack ================= -->
+                <span>Web</span>
 
-    <section id="stack">
+                <span>Android</span>
 
-        <h2>Tech Stack</h2>
-
-        <div class="stack-grid">
-
-            <div class="stack-card">Python</div>
-
-            <div class="stack-card">HTML5</div>
-
-            <div class="stack-card">CSS3</div>
-
-            <div class="stack-card">JavaScript</div>
-
-            <div class="stack-card">Kotlin</div>
-
-            <div class="stack-card">Streamlit</div>
-
-            <div class="stack-card">Flask</div>
-
-            <div class="stack-card">Supabase</div>
-
-            <div class="stack-card">Git & GitHub</div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= Projects ================= -->
-
-    <section id="projects">
-
-        <h2>Projects</h2>
-
-        <div class="project-grid">
-
-            <div class="project-card">
-
-                <h3>StudyFlow</h3>
-
-                <p>
-                    공부 관리 플랫폼
-                </p>
+                <span>AI</span>
 
             </div>
 
-            <div class="project-card">
+            <!-- 버튼 -->
 
-                <h3>PCLogger</h3>
+            <div class="hero-buttons">
 
-                <p>
-                    공용 PC 관리 프로그램
-                </p>
+                <a href="#projects"
+                    class="btn primary">
 
-            </div>
+                    <i class="fa-solid fa-folder-open"></i>
 
-            <div class="project-card">
+                    <span>Projects</span>
 
-                <h3>Codexora</h3>
+                </a>
 
-                <p>
-                    IT Blog
-                </p>
+                <a href="#contact"
+                    class="btn secondary">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <span>Contact</span>
+
+                </a>
 
             </div>
 
         </div>
 
-    </section>
+        <!-- Scroll -->
 
-    <!-- ================= Activity ================= -->
+        <div class="scroll-indicator">
 
-    <section id="activity">
+            <span>Scroll</span>
 
-        <h2>Current Activity</h2>
+            <i class="fa-solid fa-chevron-down"></i>
 
-        <p>
-
-            네이버 블로그
-
-            <strong>Codexora</strong>를 운영하며
-
-            Python, AI, 웹 개발 등
-
-            다양한 IT 콘텐츠를 공유하고 있습니다.
-
-        </p>
+        </div>
 
     </section>
 
-    <!-- ================= Contact ================= -->
+    <!-- =======================================================
+         ABOUT
+    ======================================================== -->
 
-    <section id="contact">
+    <section id="about" class="section">
 
-        <h2>Contact</h2>
+        <div class="container">
 
-        <p>
+            <div class="section-header">
 
-            협업이나 문의가 있으시다면
+                <span class="section-subtitle">
+                    About Me
+                </span>
 
-            아래 버튼을 통해 연락해주세요.
+                <h2 class="section-title">
+                    안녕하세요, KMJ입니다.
+                </h2>
 
-        </p>
+            </div>
 
-        <a href="#" class="btn primary">
+            <div class="about-card">
 
-            Contact Me
+                <div class="about-content">
 
-        </a>
+                    <p>
+                        저는 <strong>KMJ</strong>라는 이름으로 활동하는 학생 개발자입니다.
+                    </p>
+
+                    <p>
+                        웹 개발, Python, Android 앱 개발 등 다양한 기술을 배우며
+                        실제 생활에서 도움이 되는 서비스를 만드는 것을 목표로 하고 있습니다.
+                    </p>
+
+                    <p>
+                        새로운 기술을 배우는 것을 좋아하며,
+                        사용자 경험을 중요하게 생각하는 개발을 지향합니다.
+                    </p>
+
+                </div>
+
+                <div class="about-info">
+
+                    <div class="info-item">
+
+                        <span class="info-title">
+
+                            활동명
+
+                        </span>
+
+                        <span class="info-value">
+
+                            KMJ
+
+                        </span>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <span class="info-title">
+
+                            블로그
+
+                        </span>
+
+                        <span class="info-value">
+
+                            Codexora
+
+                        </span>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <span class="info-title">
+
+                            관심 분야
+
+                        </span>
+
+                        <span class="info-value">
+
+                            Web · AI · Android
+
+                        </span>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <span class="info-title">
+
+                            목표
+
+                        </span>
+
+                        <span class="info-value">
+
+                            Useful Software
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
-    <!-- ================= Footer ================= -->
+    <!-- =======================================================
+         TECH STACK
+    ======================================================== -->
 
-    <footer>
+    <section id="stack" class="section">
 
-        <p>
+        <div class="container">
 
-            © 2026 KMJ
+            <div class="section-header">
 
-        </p>
+                <span class="section-subtitle">
+
+                    Tech Stack
+
+                </span>
+
+                <h2 class="section-title">
+
+                    사용하고 있는 기술
+
+                </h2>
+
+            </div>
+
+            <div class="stack-grid">
+
+                <!-- Python -->
+
+                <div class="stack-card">
+
+                    <i class="devicon-python-plain colored"></i>
+
+                    <h3>Python</h3>
+
+                    <p>Main Language</p>
+
+                </div>
+
+                <!-- HTML -->
+
+                <div class="stack-card">
+
+                    <i class="devicon-html5-plain colored"></i>
+
+                    <h3>HTML5</h3>
+
+                    <p>Markup</p>
+
+                </div>
+
+                <!-- CSS -->
+
+                <div class="stack-card">
+
+                    <i class="devicon-css3-plain colored"></i>
+
+                    <h3>CSS3</h3>
+
+                    <p>Styling</p>
+
+                </div>
+
+                <!-- JavaScript -->
+
+                <div class="stack-card">
+
+                    <i class="devicon-javascript-plain colored"></i>
+
+                    <h3>JavaScript</h3>
+
+                    <p>Frontend</p>
+
+                </div>
+
+                <!-- Kotlin -->
+
+                <div class="stack-card">
+
+                    <i class="devicon-kotlin-plain colored"></i>
+
+                    <h3>Kotlin</h3>
+
+                    <p>Android</p>
+
+                </div>
+
+                <!-- Streamlit -->
+
+                <div class="stack-card">
+
+                    <i class="devicon-streamlit-plain colored"></i>
+
+                    <h3>Streamlit</h3>
+
+                    <p>Python App</p>
+
+                </div>
+
+                <!-- Flask -->
+
+                <div class="stack-card">
+
+                    <i class="devicon-flask-original"></i>
+
+                    <h3>Flask</h3>
+
+                    <p>Backend</p>
+
+                </div>
+
+                <!-- Supabase -->
+
+                <div class="stack-card">
+
+                    <i class="devicon-supabase-plain colored"></i>
+
+                    <h3>Supabase</h3>
+
+                    <p>Database</p>
+
+                </div>
+
+                <!-- Git -->
+
+                <div class="stack-card">
+
+                    <i class="devicon-git-plain colored"></i>
+
+                    <h3>Git</h3>
+
+                    <p>Version Control</p>
+
+                </div>
+
+                <!-- GitHub -->
+
+                <div class="stack-card">
+
+                    <i class="devicon-github-original"></i>
+
+                    <h3>GitHub</h3>
+
+                    <p>Repository</p>
+
+                </div>
+
+                <!-- VS Code -->
+
+                <div class="stack-card">
+
+                    <i class="devicon-vscode-plain colored"></i>
+
+                    <h3>VS Code</h3>
+
+                    <p>Editor</p>
+
+                </div>
+
+                <!-- Android Studio -->
+
+                <div class="stack-card">
+
+                    <i class="devicon-androidstudio-plain colored"></i>
+
+                    <h3>Android Studio</h3>
+
+                    <p>Mobile Development</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         PROJECTS
+    ======================================================== -->
+
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-subtitle">
+                    Featured Projects
+                </span>
+
+                <h2 class="section-title">
+                    프로젝트
+                </h2>
+
+                <p class="section-description">
+                    직접 기획하고 개발한 프로젝트입니다.
+                </p>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- ================= Project 1 ================= -->
+
+                <article class="project-card">
+
+                    <div class="project-header">
+
+                        <div class="project-icon">
+                            📚
+                        </div>
+
+                        <span class="project-status">
+                            In Progress
+                        </span>
+
+                    </div>
+
+                    <h3 class="project-title">
+                        StudyFlow
+                    </h3>
+
+                    <p class="project-description">
+                        공부 일정, 학습 기록, AI 기능 등을 통합하여
+                        효율적인 학습을 지원하는 플랫폼입니다.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>Supabase</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="#"
+                           class="project-button">
+
+                            자세히 보기
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- ================= Project 2 ================= -->
+
+                <article class="project-card">
+
+                    <div class="project-header">
+
+                        <div class="project-icon">
+                            💻
+                        </div>
+
+                        <span class="project-status">
+                            Completed
+                        </span>
+
+                    </div>
+
+                    <h3 class="project-title">
+                        PCLogger
+                    </h3>
+
+                    <p class="project-description">
+                        공용 PC의 로그인, 프로그램 실행,
+                        화면 녹화 등을 기록하는 관리 솔루션입니다.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>SQLite</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="#"
+                           class="project-button">
+
+                            자세히 보기
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- ================= Project 3 ================= -->
+
+                <article class="project-card">
+
+                    <div class="project-header">
+
+                        <div class="project-icon">
+                            🌐
+                        </div>
+
+                        <span class="project-status">
+                            Running
+                        </span>
+
+                    </div>
+
+                    <h3 class="project-title">
+                        Portfolio Website
+                    </h3>
+
+                    <p class="project-description">
+                        현재 보고 있는
+                        KMJ 포트폴리오 웹사이트입니다.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="#hero"
+                           class="project-button">
+
+                            현재 페이지
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =======================================================
+         ACTIVITY
+    ======================================================== -->
+
+    <section id="activity" class="section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-subtitle">
+
+                    Activity
+
+                </span>
+
+                <h2 class="section-title">
+
+                    활동
+
+                </h2>
+
+                <p class="section-description">
+
+                    개발과 학습을 꾸준히 기록하고 공유하고 있습니다.
+
+                </p>
+
+            </div>
+
+            <div class="activity-grid">
+
+                <!-- Blog -->
+
+                <article class="activity-card">
+
+                    <div class="activity-icon">
+
+                        📝
+
+                    </div>
+
+                    <h3>
+
+                        Codexora
+
+                    </h3>
+
+                    <p>
+
+                        Python, IT 지식, 개발 경험 등을
+                        기록하는 개인 기술 블로그입니다.
+
+                    </p>
+
+                    <a href="#"
+                       class="activity-button">
+
+                        블로그 방문
+
+                    </a>
+
+                </article>
+
+                <!-- GitHub -->
+
+                <article class="activity-card">
+
+                    <div class="activity-icon">
+
+                        💡
+
+                    </div>
+
+                    <h3>
+
+                        GitHub
+
+                    </h3>
+
+                    <p>
+
+                        다양한 프로젝트를 개발하며
+                        지속적으로 업데이트하고 있습니다.
+
+                    </p>
+
+                    <a href="#"
+                       class="activity-button">
+
+                        GitHub 보기
+
+                    </a>
+
+                </article>
+
+                <!-- Learning -->
+
+                <article class="activity-card">
+
+                    <div class="activity-icon">
+
+                        🚀
+
+                    </div>
+
+                    <h3>
+
+                        Learning
+
+                    </h3>
+
+                    <p>
+
+                        새로운 기술을 배우고
+                        직접 프로젝트를 만들어 보며 성장하고 있습니다.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =======================================================
+         CONTACT
+    ======================================================== -->
+
+    <section id="contact" class="section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-subtitle">
+
+                    Contact
+
+                </span>
+
+                <h2 class="section-title">
+
+                    함께 프로젝트를 만들어 볼까요?
+
+                </h2>
+
+                <p class="section-description">
+
+                    협업, 프로젝트 제안, 기타 문의는
+                    아래 링크를 통해 언제든지 연락해 주세요.
+
+                </p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <div class="contact-item">
+
+                    <i class="fa-brands fa-github"></i>
+
+                    <div>
+
+                        <h3>GitHub</h3>
+
+                        <p>프로젝트와 소스코드를 확인할 수 있습니다.</p>
+
+                    </div>
+
+                    <a href="#"
+                        target="_blank"
+                        class="contact-link">
+
+                        방문하기
+
+                    </a>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-blog"></i>
+
+                    <div>
+
+                        <h3>Codexora</h3>
+
+                        <p>IT · Python · 개발 이야기를 기록하는 블로그입니다.</p>
+
+                    </div>
+
+                    <a href="#"
+                        target="_blank"
+                        class="contact-link">
+
+                        방문하기
+
+                    </a>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+
+                        <h3>문의</h3>
+
+                        <p>협업 및 기타 문의는 원하는 방법으로 연락해 주세요.</p>
+
+                    </div>
+
+                    <a href="#"
+                        class="contact-link">
+
+                        문의하기
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =======================================================
+         FOOTER
+    ======================================================== -->
+
+    <footer id="footer">
+
+        <div class="container">
+
+            <h2 class="footer-logo">
+
+                KMJ
+
+            </h2>
+
+            <p class="footer-description">
+
+                Student Developer
+
+            </p>
+
+            <div class="footer-links">
+
+                <a href="#hero">
+
+                    Home
+
+                </a>
+
+                <a href="#about">
+
+                    About
+
+                </a>
+
+                <a href="#projects">
+
+                    Projects
+
+                </a>
+
+                <a href="#contact">
+
+                    Contact
+
+                </a>
+
+            </div>
+
+            <div class="footer-social">
+
+                <a href="#" target="_blank">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+                <a href="#" target="_blank">
+
+                    <i class="fa-solid fa-blog"></i>
+
+                </a>
+
+                <a href="#contact">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+            </div>
+
+            <p class="footer-copy">
+
+                © 2026 KMJ. All Rights Reserved.
+
+            </p>
+
+            <p class="footer-made">
+
+                Built with ❤️ using HTML, CSS & JavaScript
+
+            </p>
+
+        </div>
 
     </footer>
+
+    <!-- =======================================================
+         JAVASCRIPT
+    ======================================================== -->
 
     <script src="js/main.js"></script>
 
