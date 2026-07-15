@@ -29,9 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initProgressBar();
 
     initMobileMenu();
-
-    initReveal();
-
+   
     initActiveNavigation();
 
     initBackToTop();
