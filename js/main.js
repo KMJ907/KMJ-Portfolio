@@ -1,5 +1,5 @@
 /* ==========================================================
-   KMJ Portfolio v1
+   Codexora Portfolio v1
    main.js
 
    Features:
