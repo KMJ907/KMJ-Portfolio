@@ -1,4 +1,4 @@
-# KMJ Portfolio
+# Codexora Portfolio
 
 > HTML / CSS / JavaScript로 제작한 개인 포트폴리오 웹사이트
 
@@ -10,7 +10,7 @@
 
 안녕하세요.
 
-**KMJ Portfolio**는 저를 소개하기 위해 직접 제작한 개인 포트폴리오 사이트입니다.
+**Codexora Portfolio**는 저를 소개하기 위해 직접 제작한 개인 포트폴리오 사이트입니다.
 
 React, Next.js와 같은 프레임워크 없이  
 순수 **HTML, CSS, JavaScript**를 활용하여 제작하였으며,
@@ -55,7 +55,7 @@ React, Next.js와 같은 프레임워크 없이
 ## 📂 Project Structure
 
 ```text
-KMJ-Portfolio
+Codexora-Portfolio
 
 ├── index.html
 
